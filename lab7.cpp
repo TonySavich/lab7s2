@@ -145,8 +145,8 @@ public:
 
 
 				tmp.m_mat[0][0] = m_mat[1][1] / k;
-				tmp.m_mat[0][1] = m_mat[0][1] / k;
-				tmp.m_mat[1][0] = m_mat[1][0] / k;
+				tmp.m_mat[0][1] = (-m_mat[0][1]) / k;
+				tmp.m_mat[1][0] = (-m_mat[1][0]) / k;
 				tmp.m_mat[1][1] = m_mat[0][0] / k;
 				return tmp;
 			}
